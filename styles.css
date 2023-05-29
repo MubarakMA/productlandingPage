@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: grid;
+    place-items: center; */
+    background-color: aliceblue;
+    font-family:sans-serif;
+
+}
+main{
+    display: grid;
+    place-items: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    /* bottom: 0; */
+    width: 90%;
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 30px 0 30px 0;
+}
+
+#header-img{
+    width: 300px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+}
+
+form{
+    text-align: center;
+    padding: 0 10px 10px;
+    /* border: solid; */
+}
+#topic, #email, #submit{
+    margin: 10px 0 10px 0;
+}
+#topic{
+    font-size: 30px;
+}
+#email{
+    border: solid 2px yellowgreen;
+    padding: 10px 50px ;
+    border-radius: 10px;
+}
+#submit{
+    border:  none;
+    background-color: yellowgreen;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+.opening{
+    margin-top: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.nav-link{
+    color: #323232;
+}
+
+.ft1, .ft2, .ft3{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.Pricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px 0 40px 0;
+}
+.price{
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 40px 40px 30px 40px;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 25px;
+}
+h4{
+    background-color: grey;
+    color: white;
+    padding: 1px 60px 1px 60px;
+}
+#submit{
+    padding: 10px 30px 10px 30px;
+}
+
+footer{
+    background-color: grey;
+    padding: 10px 30px 10px 820px;
+    margin: 0 30px 30px 30px;
+    color: aliceblue;
+    border-radius: 0 10px 0 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 425px) {
+    .Pricing{
+        grid-template-columns: 1fr;
+        font-size:xx-large;
+        margin: 40px 0 40px 0;
+
+    }
+    .ft1, .ft2, .ft3{
+        width: 420px;
+        font-size:40px;
+        line-height: 60px;
+    }
+}
